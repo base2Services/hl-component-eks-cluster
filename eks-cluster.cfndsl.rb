@@ -190,4 +190,12 @@ CloudFormation do
     })
   }
 
+  Output(:EksClusterSecurityGroup) {
+    Value Ref(:EksClusterSecurityGroup)
+  }
+
+  Output(:EksNodeSecurityGroup) {
+    Value Ref(:EksNodeSecurityGroup)
+  }
+
 end
